@@ -1,6 +1,6 @@
 import { React, TypeScript, NodeJS, Angular, Vue, Docker, Git, Python} from "../../assets/technologies"
 
-interface Technology { 
+export interface Technology { 
   id: number,
   name: string, 
   description: string,

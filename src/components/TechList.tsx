@@ -1,16 +1,18 @@
 import React from 'react'
-import { View, Text } from 'react-native'
+import { Text, FlatList, Image } from 'react-native'
 import technologies from '../data/technologies'
+import TechItems from './TechItems'
 
 const TechList = () => {
   return (
-    <View>
-      {technologies.map((tech, i) => (
-        <View key={i}>
-          <Text>{tech.id}</Text>
-        </View>
-      ))}
-    </View>
+    <FlatList
+    data={technologies}
+    ItemSeparatorComponent={() => <Text> </Text>}
+    renderItem={({item: tech}) => (
+        <TechItems {...tech} />
+    )}
+    >
+    </FlatList>
   )
 
 }
