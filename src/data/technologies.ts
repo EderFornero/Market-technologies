@@ -6,6 +6,7 @@ export interface Technology {
   description: string,
   rating: number,
   dailyUsage: number,
+  difficulty: string,
   image: string
 }
 
@@ -17,6 +18,7 @@ const technologies: Technology[] = [
     description: "A JavaScript library for building user interfaces.",
     rating: 4.5,
     dailyUsage: 70,
+    difficulty: "Intermediate",
     image: React
   },
   {
@@ -25,6 +27,7 @@ const technologies: Technology[] = [
     description: "A superset of JavaScript that adds static typing.",
     rating: 4.0,
     dailyUsage: 60,
+    difficulty: "Advance",
     image: TypeScript
   },
   {
@@ -33,6 +36,7 @@ const technologies: Technology[] = [
     description: "A JavaScript runtime built on Chrome's V8 JavaScript engine.",
     rating: 4.2,
     dailyUsage: 55,
+    difficulty: "Intermediate",
     image: NodeJS
   },
   {
@@ -41,6 +45,7 @@ const technologies: Technology[] = [
     description: "A platform for building web applications.",
     rating: 4.0,
     dailyUsage: 40,
+    difficulty: "Advance",
     image: Angular
   },
   {
@@ -49,6 +54,7 @@ const technologies: Technology[] = [
     description: "A platform for developing, shipping, and running applications in containers.",
     rating: 4.3,
     dailyUsage: 45,
+    difficulty: "Intermediate",
     image: Docker
   },
   {
@@ -57,6 +63,7 @@ const technologies: Technology[] = [
     description: "A progressive JavaScript framework for building user interfaces.",
     rating: 4.1,
     dailyUsage: 30,
+    difficulty: "Intermediate",
     image: Vue
   },
   {
@@ -65,6 +72,7 @@ const technologies: Technology[] = [
     description: "A versatile high-level programming language.",
     rating: 4.6,
     dailyUsage: 75,
+    difficulty: "Beginner",
     image: Python
   },
   {
@@ -73,6 +81,7 @@ const technologies: Technology[] = [
     description: "A distributed version control system for tracking changes in source code.",
     rating: 4.4,
     dailyUsage: 65,
+    difficulty: "Intermediate",
     image: Git
   }
 ]
