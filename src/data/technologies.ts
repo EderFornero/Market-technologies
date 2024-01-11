@@ -1,4 +1,3 @@
-import { React, TypeScript, NodeJS, Angular, Vue, Docker, Git, Python} from "../../assets/technologies"
 
 export interface Technology { 
   id: number,
@@ -19,7 +18,7 @@ const technologies: Technology[] = [
     rating: 4.5,
     dailyUsage: 70,
     difficulty: "Intermediate",
-    image: React
+    image: 'https://www.svgrepo.com/show/452092/react.svg'
   },
   {
     id: 2,
@@ -28,7 +27,7 @@ const technologies: Technology[] = [
     rating: 4.0,
     dailyUsage: 60,
     difficulty: "Advance",
-    image: TypeScript
+    image: 'https://www.svgrepo.com/show/349540/typescript.svg'
   },
   {
     id: 3,
@@ -37,7 +36,7 @@ const technologies: Technology[] = [
     rating: 4.2,
     dailyUsage: 55,
     difficulty: "Intermediate",
-    image: NodeJS
+    image: 'https://www.svgrepo.com/show/452075/node-js.svg'
   },
   {
     id: 4,
@@ -46,7 +45,7 @@ const technologies: Technology[] = [
     rating: 4.0,
     dailyUsage: 40,
     difficulty: "Advance",
-    image: Angular
+    image: 'https://www.svgrepo.com/show/452156/angular.svg'
   },
   {
     id: 5,
@@ -55,7 +54,7 @@ const technologies: Technology[] = [
     rating: 4.3,
     dailyUsage: 45,
     difficulty: "Intermediate",
-    image: Docker
+    image: 'https://www.svgrepo.com/show/448221/docker.svg'
   },
   {
     id: 6,
@@ -64,7 +63,7 @@ const technologies: Technology[] = [
     rating: 4.1,
     dailyUsage: 30,
     difficulty: "Intermediate",
-    image: Vue
+    image: 'https://www.svgrepo.com/show/452130/vue.svg'
   },
   {
     id: 7,
@@ -73,7 +72,7 @@ const technologies: Technology[] = [
     rating: 4.6,
     dailyUsage: 75,
     difficulty: "Beginner",
-    image: Python
+    image: 'https://www.svgrepo.com/show/452091/python.svg'
   },
   {
     id: 8,
@@ -82,7 +81,7 @@ const technologies: Technology[] = [
     rating: 4.4,
     dailyUsage: 65,
     difficulty: "Intermediate",
-    image: Git
+    image: 'https://www.svgrepo.com/show/452210/git.svg'
   }
 ]
 

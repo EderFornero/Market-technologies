@@ -25,6 +25,10 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "packagerOpts": { 
+      "config": "metro.config.ts",
+      "sourceExts": ["js", "jsx", "ts", "tsx"]
     }
   }
 }
