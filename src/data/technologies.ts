@@ -18,7 +18,7 @@ const technologies: Technology[] = [
     rating: 4.5,
     dailyUsage: 70,
     difficulty: "Intermediate",
-    image: 'https://www.svgrepo.com/show/452092/react.svg'
+    image: 'https://w7.pngwing.com/pngs/79/518/png-transparent-js-react-js-logo-react-react-native-logos-icon-thumbnail.png'
   },
   {
     id: 2,

@@ -15,24 +15,11 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   image: {
-    width: 40, 
-    height: 40,
+    width: 48, 
+    height: 48,
     margin: 'auto'
   }
 })
-
-const getImageSource = (imageName: string) => {
-  switch (imageName) {
-    case 'React':
-      return require('../../assets/technologies/react.svg');
-    case 'TypeScript':
-      return require('../../assets/technologies/typescript.svg');
-    case 'NodeJS':
-      return require('../../assets/technologies/node-js.svg');
-    default:
-      return require('../../assets/technologies/default-image.png');
-  }
-};
 
 const Stats: React.FC<TechnologyItemProps> = ({rating, dailyUsage, difficulty}) => {
   return (
@@ -58,7 +45,7 @@ const Stats: React.FC<TechnologyItemProps> = ({rating, dailyUsage, difficulty}) 
 const TechItem: React.FC<TechnologyItemProps> = ({id, name, description, rating, dailyUsage, difficulty, image}) => {
   return (
     <View key={id} style={{padding: 20, paddingVertical: 5}}>
-          <Image style={styles.image} source={{uri: image}} />
+        <Image style={styles.image} source={{uri: image}} />
           <StyledText fontSize='title' fontWeight='bold'>{name}</StyledText>
           <StyledText>{description}</StyledText>
           <Stats id={id} name={''} description={''} rating={rating} dailyUsage={dailyUsage} difficulty={difficulty} image={''} />
