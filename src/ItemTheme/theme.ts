@@ -22,7 +22,7 @@ export const theme = {
     end: 'right'
   }, 
   appBar: { 
-    background: '#464654', 
+    background: '#2C3B39', 
     textColor: '#F7F7F7'
   },
   textPaddingHorizontal: {

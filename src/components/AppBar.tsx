@@ -21,7 +21,6 @@ const styles = StyleSheet.create({
 
 const AppBar = () => { 
   return (
-    
     <View style={styles.appBar}>
       <ScrollView horizontal showsHorizontalScrollIndicator={false}>
       <StyledText appBarTextColor='textColor' textPaddingHorizontal='paddingHorizontal'>Main Tech</StyledText>
@@ -30,7 +29,6 @@ const AppBar = () => {
       <StyledText appBarTextColor='textColor' textPaddingHorizontal='paddingHorizontal'>Databases</StyledText>
       </ScrollView>
     </View>
-   
   )
 } 
 

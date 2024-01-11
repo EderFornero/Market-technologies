@@ -1,15 +1,12 @@
 import React from 'react'
 import TechList from './TechList'
-import { View } from 'react-native'
-import Constants from 'expo-constants'
-import AppBar from './AppBar'
+import StyledView from './StyledView'
 
 const Main = () => {
   return (
-    <View>
-      <AppBar />
+    <StyledView statusBar='statusBar'>
       <TechList />  
-    </View>
+    </StyledView>
   ) 
 }
 
