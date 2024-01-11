@@ -1,5 +1,5 @@
 import React from 'react'
-import { Image, View, StyleSheet } from 'react-native'
+import { Image, View, StyleSheet, ImageSourcePropType } from 'react-native'
 import { Technology } from '../data/technologies'
 import StyledText from './StyledText'
 import { SvgUri } from 'react-native-svg'
@@ -18,6 +18,13 @@ const styles = StyleSheet.create({
     width: 48, 
     height: 48,
     margin: 'auto'
+  }, 
+  rowDirection: {
+    flexDirection: 'row'
+  }, 
+  padding: {
+    paddingHorizontal: 15,
+    paddingVertical: 10
   }
 })
 
@@ -45,10 +52,12 @@ const Stats: React.FC<TechnologyItemProps> = ({rating, dailyUsage, difficulty}) 
 const TechItem: React.FC<TechnologyItemProps> = ({id, name, description, rating, dailyUsage, difficulty, image}) => {
   return (
     <View key={id} style={{padding: 20, paddingVertical: 5}}>
-        <Image style={styles.image} source={{uri: image}} />
-          <StyledText fontSize='title' fontWeight='bold'>{name}</StyledText>
+      <View style={styles.rowDirection}>
+          <Image style={styles.image} source={image} />
+          <StyledText style={styles.padding} fontSize='title' fontWeight='bold'>{name}</StyledText>
+      </View>
           <StyledText>{description}</StyledText>
-          <Stats id={id} name={''} description={''} rating={rating} dailyUsage={dailyUsage} difficulty={difficulty} image={''} />
+          <Stats id={id} name={''} description={''} rating={rating} dailyUsage={dailyUsage} difficulty={difficulty} image={image} />
     </View>
   )
 }

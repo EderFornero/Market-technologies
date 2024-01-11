@@ -1,3 +1,4 @@
+import { ImageSourcePropType } from 'react-native'
 
 export interface Technology { 
   id: number,
@@ -6,7 +7,7 @@ export interface Technology {
   rating: number,
   dailyUsage: number,
   difficulty: string,
-  image: string
+  image: ImageSourcePropType
 }
 
 
@@ -18,7 +19,7 @@ const technologies: Technology[] = [
     rating: 4.5,
     dailyUsage: 70,
     difficulty: "Intermediate",
-    image: 'https://w7.pngwing.com/pngs/79/518/png-transparent-js-react-js-logo-react-react-native-logos-icon-thumbnail.png'
+    image: require('../../assets/technologies/gratis-png-reaccionar-javascript-angularjs-ionic-github.png')
   },
   {
     id: 2,
@@ -27,7 +28,7 @@ const technologies: Technology[] = [
     rating: 4.0,
     dailyUsage: 60,
     difficulty: "Advance",
-    image: 'https://www.svgrepo.com/show/349540/typescript.svg'
+    image: require('../../assets/technologies/typescript.png')
   },
   {
     id: 3,
@@ -36,7 +37,7 @@ const technologies: Technology[] = [
     rating: 4.2,
     dailyUsage: 55,
     difficulty: "Intermediate",
-    image: 'https://www.svgrepo.com/show/452075/node-js.svg'
+    image: require('../../assets/technologies/nodejs.png')
   },
   {
     id: 4,
@@ -45,7 +46,7 @@ const technologies: Technology[] = [
     rating: 4.0,
     dailyUsage: 40,
     difficulty: "Advance",
-    image: 'https://www.svgrepo.com/show/452156/angular.svg'
+    image: require('../../assets/technologies/angular.png')
   },
   {
     id: 5,
@@ -54,7 +55,7 @@ const technologies: Technology[] = [
     rating: 4.3,
     dailyUsage: 45,
     difficulty: "Intermediate",
-    image: 'https://www.svgrepo.com/show/448221/docker.svg'
+    image: require('../../assets/technologies/docker.png')
   },
   {
     id: 6,
@@ -63,7 +64,7 @@ const technologies: Technology[] = [
     rating: 4.1,
     dailyUsage: 30,
     difficulty: "Intermediate",
-    image: 'https://www.svgrepo.com/show/452130/vue.svg'
+    image: require('../../assets/technologies/vue.png')
   },
   {
     id: 7,
@@ -72,7 +73,7 @@ const technologies: Technology[] = [
     rating: 4.6,
     dailyUsage: 75,
     difficulty: "Beginner",
-    image: 'https://www.svgrepo.com/show/452091/python.svg'
+    image: require('../../assets/technologies/python.png')
   },
   {
     id: 8,
@@ -81,7 +82,7 @@ const technologies: Technology[] = [
     rating: 4.4,
     dailyUsage: 65,
     difficulty: "Intermediate",
-    image: 'https://www.svgrepo.com/show/452210/git.svg'
+    image: require('../../assets/technologies/git.png')
   }
 ]
 

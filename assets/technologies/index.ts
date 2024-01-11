@@ -1,8 +1,0 @@
-export {default as React} from './react.svg'
-export {default as TypeScript} from './typescript.svg'
-export {default as NodeJS} from './node-js.svg'
-export {default as Angular} from './angular.svg'
-export {default as Python} from './python.svg'
-export {default as Vue} from './vue.svg'
-export {default as Docker} from './docker.svg'
-export {default as Git} from './git.svg'
