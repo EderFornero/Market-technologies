@@ -24,6 +24,9 @@ export const theme = {
   appBar: { 
     background: '#464654', 
     textColor: '#F7F7F7'
+  },
+  textPaddingHorizontal: {
+    paddingHorizontal: 15
   }
 }
 

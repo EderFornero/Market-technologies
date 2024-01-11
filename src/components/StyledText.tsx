@@ -13,6 +13,7 @@ type StyledTextProps = {
   alignEnd?: 'end'; 
   appBarBackground?: 'background'; 
   appBarTextColor?: 'textColor'
+  textPaddingHorizontal?: 'paddingHorizontal'
 };
 
 
@@ -52,6 +53,9 @@ const styles = StyleSheet.create({
   },
   appBarTextColor: {
     color: theme.appBar.textColor
+  },
+  textPaddingHorizontal: {
+    paddingHorizontal: theme.textPaddingHorizontal.paddingHorizontal
   }
 })
 
@@ -66,6 +70,7 @@ const StyledText: React.FC<StyledTextProps & TextProps> = ({
   alignEnd,
   appBarBackground,
   appBarTextColor,
+  textPaddingHorizontal,
   ...restOfProps
 }) => {
   const textStyles = [
@@ -80,6 +85,7 @@ const StyledText: React.FC<StyledTextProps & TextProps> = ({
     alignEnd === 'end' && styles.alignEnd,
     appBarBackground === 'background' && styles.appBarBackground, 
     appBarTextColor === 'textColor' && styles.appBarTextColor,
+    textPaddingHorizontal === 'paddingHorizontal' && styles.textPaddingHorizontal,
     style
   ]
   return (
