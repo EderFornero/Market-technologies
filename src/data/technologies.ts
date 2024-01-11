@@ -19,7 +19,7 @@ const technologies: Technology[] = [
     rating: 4.5,
     dailyUsage: 70,
     difficulty: "Intermediate",
-    image: require('../../assets/technologies/gratis-png-reaccionar-javascript-angularjs-ionic-github.png')
+    image: require('../../assets/technologies/react.png')
   },
   {
     id: 2,

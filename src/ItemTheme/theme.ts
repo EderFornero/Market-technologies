@@ -10,14 +10,20 @@ export const theme = {
   fontSizes: {
     title: 18,
     subtitle: 16,
-    body: 14 
+    body: 15
   },
   fontWeights: {
     normal: '400',
     bold: '700'
   },
   aligns: { 
-    center: 'center'
+    center: 'center',
+    start: 'left',
+    end: 'right'
+  }, 
+  appBar: { 
+    background: '#464654', 
+    textColor: '#F7F7F7'
   }
 }
 

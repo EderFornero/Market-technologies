@@ -2,10 +2,12 @@ import React from 'react'
 import TechList from './TechList'
 import { View } from 'react-native'
 import Constants from 'expo-constants'
+import AppBar from './AppBar'
 
 const Main = () => {
   return (
-    <View style={{marginTop: Constants.statusBarHeight}}>
+    <View>
+      <AppBar />
       <TechList />  
     </View>
   ) 

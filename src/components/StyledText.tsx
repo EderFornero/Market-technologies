@@ -8,7 +8,11 @@ type StyledTextProps = {
   fontSize?: 'title' | 'subtitle';
   fontWeight?: 'bold' | 'normal';
   style?: TextStyle;
-  align?: 'center'
+  alignCenter?: 'center';
+  alignStart?: 'start';
+  alignEnd?: 'end'; 
+  appBarBackground?: 'background'; 
+  appBarTextColor?: 'textColor'
 };
 
 
@@ -34,8 +38,20 @@ const styles = StyleSheet.create({
   subtitleText: {
     fontSize: theme.fontSizes.subtitle
   },
-  align: {
+  alignCenter: {
     textAlign: theme.aligns.center as any
+  },
+  alignStart: {
+    textAlign: theme.aligns.start as any
+  }, 
+  alignEnd: {
+    textAlign: theme.aligns.end as any  
+  },
+  appBarBackground: { 
+    backgroundColor: theme.appBar.background
+  },
+  appBarTextColor: {
+    color: theme.appBar.textColor
   }
 })
 
@@ -45,7 +61,11 @@ const StyledText: React.FC<StyledTextProps & TextProps> = ({
   fontSize,
   fontWeight,
   style,
-  align,
+  alignCenter,
+  alignStart,
+  alignEnd,
+  appBarBackground,
+  appBarTextColor,
   ...restOfProps
 }) => {
   const textStyles = [
@@ -55,7 +75,11 @@ const StyledText: React.FC<StyledTextProps & TextProps> = ({
     fontSize === 'title' && styles.titleText,
     fontSize === 'subtitle' && styles.subtitleText,
     fontWeight === 'bold' && styles.boldText,
-    align === 'center' && styles.align,
+    alignCenter === 'center' && styles.alignCenter,
+    alignStart === 'start' && styles.alignStart,
+    alignEnd === 'end' && styles.alignEnd,
+    appBarBackground === 'background' && styles.appBarBackground, 
+    appBarTextColor === 'textColor' && styles.appBarTextColor,
     style
   ]
   return (
